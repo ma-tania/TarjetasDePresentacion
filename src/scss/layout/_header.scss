@@ -1,0 +1,36 @@
+
+.header {
+    height: 30vh;
+    
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+
+    @media screen and (min-width: 768px) {
+        height: 60vh;
+        
+    }
+    .mainImage {
+        width: 25rem;
+        margin-top: 15rem;
+
+        @media screen and (min-width: 768px) {
+          width: 42rem;
+          margin-top: 30rem;
+        
+            
+        }
+
+
+
+    }
+    
+
+    
+}
+
+
+
+

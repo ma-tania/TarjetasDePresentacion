@@ -1,0 +1,282 @@
+.form {
+   
+    @media screen and (min-width:768px) {
+       width: 60%;
+    }
+    @media screen and (min-width:1024px){
+        width:40%;
+    }
+&_design {
+    border-style: none;
+    justify-items: space-between;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem; 
+    border-bottom: 0.5px solid $white-three;
+
+    &_legend {
+        display: flex; 
+        text-transform: uppercase;
+        font-family: $font-paragraph;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding-top: 2.5rem;
+        justify-content: space-between;
+        width: 100%;
+
+    & div {
+        display: flex; 
+        
+    }
+    }
+
+    &_legendh2 {
+       margin-left: 1rem;
+       color: $gunmetal;
+    }
+
+    &_palets {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+        gap: 1.5rem; 
+    }
+
+    &_colors {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        position: relative; 
+        top: 1.5rem;
+        color: $gunmetal;
+        font-family: $font-paragraph;
+    }
+}
+
+.arrow {
+    width: 1.6rem;
+    height: 1.8rem; 
+    color: $gunmetal;
+    
+}
+
+.iconsForm {
+    width: 2.1rem;
+    height: 1.8rem; 
+    color: $color-orange;
+}
+
+.form_fill {
+    border-style: none;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem; 
+    border-bottom: 0.5px solid $white-three;
+    
+
+    &_form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; 
+      font-size: $font-paragraph;
+      color: $color-green; 
+    }
+
+    &_legend {
+        display: flex; 
+        text-transform: uppercase;
+        font-family: $font-paragraph;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding-top: 2.5rem;
+        justify-content: space-between;
+        width: 100%;
+        & div {
+        display: flex; 
+    }
+    }
+    
+    &_legendh22 {
+        margin-left: 1rem;
+        color: $gunmetal;
+    }
+    &_formspan {
+        display: flex;
+    }
+    &_formbutton{
+        background-color: $color-orange;
+        color:$color-white-two;
+        font-family: $font-paragraph;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        border-radius: 3px;
+        border-style: none; 
+        width: 14rem;
+        height: 3rem; 
+        padding: 8px ;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+    &_inputHidden {
+        display: none;
+    }
+    &_formlabel{
+        font-family: $font-paragraph;
+        font-size: 1.4rem; 
+    }
+    &_forminput {
+        padding: 10px;
+        height: 3rem; 
+        border: $hospital-green solid 1px; 
+    }
+    &_forminputimg {
+        width: 3rem;
+        height: 3rem; 
+        margin-left: 2rem;
+        border: $hospital-green solid 1px; 
+        background-size: cover;
+        background-image: url("../images/lisa.jpg");
+    }
+}
+
+::placeholder {
+    color: $pinkish-grey; 
+    padding-left: 5px;
+}
+
+.form_share {
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem; 
+    border-bottom: 0.5px solid $white-three;
+    &_legend {
+        display: flex; 
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-family: $font-paragraph;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding-top: 2.5rem;
+        width: 100%;
+        & div {
+            display: flex; 
+        }
+    }
+    &_legendh23 {
+        margin-left: 1rem;
+        color: $gunmetal;
+    }
+    &_link{
+        background-color: $color-orange;
+        border-style: none;
+        font-family: $font-paragraph;
+        font-weight: 600;
+        color: white;
+        font-size: 1.8rem; 
+        text-transform: uppercase;
+        cursor: pointer; 
+    }
+
+    &_div {
+        display: flex; 
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 2rem; 
+        background-color: $color-orange;
+        border-radius: 12px;
+        border-style: none; 
+        width: 20rem;
+        height: 5rem; 
+        padding: 8px ;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    
+    }
+    ///form_share_div2 
+    &_div2{
+        margin-top: 2rem;
+        border-top: 0.5px solid $white-three;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem; 
+    }
+
+    &_div2-hidden{
+        display: none;
+    }
+
+    &_div2-p{
+        padding-top: 1.5rem;
+        font-family: $font-paragraph;
+        font-weight: 600;
+        color: $gunmetal;
+        font-size: 1.8rem;
+    }
+    &_link2 {
+        color: $color-orange;
+        text-decoration: none;
+        font-family: $font-paragraph;
+    }
+    &_link3 {
+        background-color: rgba(0, 0, 0, 0.70);
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        border-style: none; 
+        width: 14rem;
+        height: 3rem; 
+        padding: 5px;
+        text-align: center;
+        line-height: 1.43; 
+        font-family: $font-paragraph;
+        font-size: 1.4rem;
+    }
+}
+}
+
+.form-heading {
+    cursor: pointer; 
+}
+
+.collapsed {
+    .form-heading{
+        .collap-arrow{
+            transform: rotate(180deg);
+        }
+    }
+    .collap-colors, .collap-fill, .collap-share {
+        display: none;
+    }
+
+}
+
+.error{
+    font-size: 1.8rem;
+    font-family: $font-paragraph;
+    padding-top: 10px;
+}
+.error-none{
+    display: none;
+    }
+
+.error-none{
+display: none;
+}
+
+#palet1 {
+    cursor: pointer; 
+
+}
+#palet2 {
+    cursor: pointer; 
+}
+#palet3 {
+    cursor: pointer; 
+}
+.asterisk{
+    color: $color-orange;
+}
+.radio{
+    display: flex;
+    gap: 5px;
+}

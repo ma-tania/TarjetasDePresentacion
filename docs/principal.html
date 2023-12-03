@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyecto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@900&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="header2">
+        <a href="./index.html"><img class="header2_awesome" src="./assets/images/tarjetas-molonas.png" alt="logo"/></a>
+    </header>
+      <main class="mainPrincipal">
+      <section class="section">
+        <div>
+          <button type="reset" class="section_reset js-reset">
+            <i class="fa-regular fa-trash-can trash "></i>
+            <p class="section_reset_p">Reset</p>
+          </button>
+          <div class="section_card">
+            <article class="section_card_article">
+              <h1 class="section_card_article_title palet1 js-nameCard">Nombre Apellido</h1>
+              <p class="section_card_article_text border1 js-jobCard">Front-end developer</p>
+              <div class="section_card_article_container">
+                <div class="section_card_article_container_image js-photoCard js__profile-image"></div>
+                <ul class="rrss">
+                 
+                  <li>
+                    <a class="js-phoneCard iconPreview icon1" href target="_blank">
+                      <i class="fa-solid fa-mobile-screen-button fa-xl"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="js-emailCard iconPreview icon1" href target="_blank">
+                      <i class="fa-regular fa-envelope fa-xl"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="js-linkedinCard iconPreview icon1" href target="_blank">
+                      <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="js-githubCard iconPreview icon1" href target="_blank">
+                      <i class="fa-brands fa-github-alt fa-xl "></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <form   class="form"  action="">
+          <fieldset class="form_design js-fieldset_design ">
+              <legend class="form_design_legend form-heading js-design-legend"> 
+              <div>   
+                  <i class="fa-regular fa-object-ungroup iconsForm"></i> 
+                  <h2 class="form_design_legendh2">Diseña</h2>
+              </div>     
+              <i class="fa-solid fa-chevron-up arrow collap-arrow"></i>
+              </legend>
+              <span class="form_design_colors collap-colors">colores</span>
+              <div class="form_design_palets collap-colors">
+                  <label class='radio' for="palet1">
+                      <input class="js-palet1 "
+                      id="palet1"
+                      type="radio"
+                      value="1"
+                      name="colores"
+                      required
+                      checked>
+                     <img src="./assets/images/palet1.jpg" alt="Es la paleta 1"/>
+                  </label>
+                  
+                  <label class='radio' for="palet2">
+                      <input class="js-palet2"
+                      id="palet2"
+                      type="radio"
+                      value="2"
+                      name="colores"
+                      required>
+                      <img src="./assets/images/palet2.jpg" alt="Es la paleta 2"/>
+                  </label>
+
+                  <label class='radio' for="palet3">
+                      <input class="js-palet3"
+                      id="palet3"
+                      type="radio"
+                      value="3"
+                      name="colores"
+                      required>
+                      <img src="./assets/images/palet3.jpg" alt="Es la paleta 3"/>
+                  </label>
+              </div>
+          </fieldset>
+          <fieldset class="form_fill js-fieldset_fill collapsed">
+              <legend class="form_fill_legend form-heading js-fill-legend"> 
+                  <div>
+                      <i class="fa-regular fa-keyboard iconsForm"></i> 
+                      <h2 class="form_fill_legendh22">Rellena</h2>
+                  </div>
+                  <i class="fa-solid fa-chevron-up arrow collap-arrow"></i>
+              </legend>
+              <div class="form_fill_form collap-fill">
+                  <label class="form_fill_formlabel " > Nombre completo <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="" placeholder="Nombre completo" class="form_fill_forminput js-inputName" required>
+                  <label class="form_fill_formlabel"> Puesto <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="text" placeholder="Ej: Front-end developer"  class="form_fill_forminput js-inputJob" required>
+                  <label class="form_fill_formlabel"> Imagen de perfil <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <span class="form_fill_formspan" >
+                      <label for="image" class="form_fill_formbutton"> Añadir Imagen</label>
+                      <input type="file" id="image" class="form_fill_inputHidden js__profile-upload-btn" required>
+                      <span class="form_fill_forminputimg js-inputPhoto js__profile-preview ">
+                      </span>
+                  </span>
+                  <label for="emailAddress" class="form_fill_formlabel"> Email <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="email" name="emailAddress" placeholder="tu-correo-electronico@email.com" class="form_fill_forminput js-inputEmail"required>
+                  <label class="form_fill_formlabel"> Teléfono <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="tel" placeholder="555-55-55-55" class="form_fill_forminput js-inputPhone">
+                  <label class="form_fill_formlabel"> Linkedin <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="text" placeholder="tu-nombre-de-usuaria" class="form_fill_forminput js-inputLinkedin" required>
+                  <label class="form_fill_formlabel"> Github <i class="fa-solid fa-asterisk fa-2xs asterisk"></i></label>
+                  <input type="text" placeholder="tu-nombre-de-usuaria"   class="form_fill_forminput js-inputGithub" required>
+              </div>
+          </fieldset>
+          <fieldset class="form_share js-fieldset_share collapsed">
+              <legend class="form_share_legend form-heading js-share-legend"> 
+                  <div><i class="fa-solid fa-share-nodes iconsForm"></i>  
+                      <h2 class="form_share_legendh23">Comparte</h2></div>
+                  <i class="fa-solid fa-chevron-up arrow collap-arrow"></i>
+              </legend>
+              <div class="form_share_div collap-share">
+                  <button class="form_share_link js-share-link" ><i class="fa-solid fa-address-card"></i> Crea tu tarjeta</button>
+              </div>
+              <p class="error js-p-error error-none"></p>
+              <div  id="div2" class=" js-div2  form_share_div2-hidden">
+                <p class="form_share_div2-p">La tarjeta ha sido creada:</p>
+                <a class="form_share_link2 js-url"  href="https://awesome-profile-card.com?id=A456DF0001">https://awesome-profile-card.com?id=A456DF0001</a>
+                <a class="form_share_link3 js-x" id="xXx" href="" target="_blank">Compartir en <i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+          </fieldset>
+
+      </form>
+      </main>
+      <footer class="footerLanding">
+          <span class="copyLanding">
+              Awesome profile-cards © 2023
+          </span>
+          <img class="logoLanding" src="./assets/images/logo-adalab.png" alt="Es el logo de Adalab"/>
+      </footer>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
